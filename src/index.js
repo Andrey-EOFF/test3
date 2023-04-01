@@ -3,10 +3,8 @@ import Notiflix from 'notiflix';
 import photoCardTemplate from '../src/template/template';
 import PhotoApiService from '../src/template/photo-api-service';
 
-// Описаний в документації
-import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
-import 'simplelightbox/dist/simple-lightbox.min.css';
+// import SimpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const photoCards = document.querySelector('.gallery');
 const searchForm = document.querySelector('#search-form');
@@ -37,15 +35,14 @@ function appendPhotoHits(data) {
   const renderedCard = Mustache.render(photoCardTemplate, data);
   photoCards.insertAdjacentHTML('beforeend', renderedCard);
 
-  // Добавил..................................
-  var lightbox = new SimpleLightbox('.gallery img', {
-    caption: true,
-    captionType: 'attr',
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-    swipeClose: true,
-    animationSpeed: 300,
-  });
+  // var lightbox = new SimpleLightbox('.gallery img', {
+  //   caption: true,
+  //   captionType: 'attr',
+  //   captionsData: 'alt',
+  //   captionPosition: 'bottom',
+  //   swipeClose: true,
+  //   animationSpeed: 300,
+  // });
 }
 
 function clearPhotoCards() {

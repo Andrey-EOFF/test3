@@ -1,5 +1,3 @@
-
-
 const photoCardTemplate = `
   {{#hits}}
     <div class="photo-card">
@@ -24,5 +22,3 @@ const photoCardTemplate = `
 `;
 
 export default photoCardTemplate;
-
-
