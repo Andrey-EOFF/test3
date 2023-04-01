@@ -38,7 +38,7 @@ function appendPhotoHits(data) {
   photoCards.insertAdjacentHTML('beforeend', renderedCard);
 
   // Добавил..................................
-  const lightbox = new SimpleLightbox('.gallery img', {
+  var lightbox = new SimpleLightbox('.gallery img', {
     caption: true,
     captionType: 'attr',
     captionsData: 'alt',
